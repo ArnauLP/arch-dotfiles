@@ -1,1 +1,17 @@
--- Workspace rules to achieve workspace-specific behaviors
+-- per-workspace layouts
+hl.workspace_rule({ workspace = "1", layout = "dwindle" })
+hl.workspace_rule({ workspace = "2", layout = "dwindle" })
+hl.workspace_rule({ workspace = "3", layout = "dwindle" })
+hl.workspace_rule({ workspace = "4", layout = "dwindle" })
+hl.workspace_rule({ workspace = "5", layout = "scrolling" })
+hl.workspace_rule({ workspace = "6", layout = "dwindle" })
+hl.workspace_rule({ workspace = "7", layout = "dwindle" })
+hl.workspace_rule({ workspace = "8", layout = "dwindle" })
+hl.workspace_rule({ workspace = "9", layout = "dwindle" })
+hl.workspace_rule({ workspace = "10", layout = "scrolling" })
+
+-- smart gaps (no gaps when only one window)
+-- hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
+-- hl.workspace_rule({ workspace = "f[1]", gaps_out = 0, gaps_in = 0 })
+-- hl.window_rule({ match = { float = false, workspace = "w[tv1]" }, border_size = 0, rounding = 0 })
+-- hl.window_rule({ match = { float = false, workspace = "f[1]" }, border_size = 0, rounding = 0 })

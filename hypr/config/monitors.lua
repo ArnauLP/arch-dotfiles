@@ -15,6 +15,14 @@ hl.monitor({
 	scale = "1",
 })
 
+-- Laptop
+hl.monitor({
+	output = "eDP-1",
+	mode = "preferred",
+	position = "auto",
+	scale = "1.6",
+})
+
 -- Other random monitors
 hl.monitor({
 	output = "",
@@ -22,3 +30,16 @@ hl.monitor({
 	position = "auto",
 	scale = "1",
 })
+
+hl.config({
+	xwayland = {
+		force_zero_scaling = true,
+	},
+
+	misc = {
+		vrr = 1,
+	},
+})
+
+hl.env("GDK_SCALE", "1")
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
