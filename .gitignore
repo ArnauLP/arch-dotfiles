@@ -4,3 +4,6 @@
 secrets.*
 private.*
 .DS_Store
+*.bak
+.dms-backups/
+*_grim.png
