@@ -96,7 +96,7 @@ hl.bind("SUPER + SHIFT + O", hl.dsp.window.set_prop({ prop = "opaque", value = "
 
 -- DMS
 hl.bind(MOD .. "space", hl.dsp.exec_cmd("dms ipc call spotlight toggle"))
-hl.bind(MOD .. "Y", hl.dsp.exec_cmd("dms ipc call dankdash wallpaper"))
+hl.bind(MOD .. "Y", hl.dsp.exec_cmd("dms ipc call wallhavenCarousel toggle"))
 hl.bind(MOD .. "TAB", hl.dsp.exec_cmd("dms ipc call hypr toggleOverview"))
 
 -- scrolling layout

@@ -2,6 +2,6 @@ return {
 	terminal = "kitty",
 	fileManager = "nautilus",
 	menu = "wofi --show drun",
-	browser = "zen-browser",
+	browser = "brave-origin",
 	terminalAlt = "kitty",
 }

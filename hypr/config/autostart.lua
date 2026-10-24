@@ -2,14 +2,20 @@ hl.on("hyprland.start", function()
 	-- AUTH
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
+	--keyring
+	hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
+
 	-- Wallpaper
 	hl.exec_cmd("awww-daemon")
 
 	-- Notif
-	hl.exec_cmd("dunst")
+	-- hl.exec_cmd("dunst") -- (handled by dms)
 
 	-- Bar
 	hl.exec_cmd("dms run")
+
+	-- Restarts VRR after restart (fix temporal, es culpa del putu kernel 7.2)
+	hl.exec_cmd("bash ~/.config/hypr/scripts/vrr-resume.sh")
 
 	-- Clipboard history
 	hl.exec_cmd("wl-paste --watch cliphist store &")
